@@ -29,7 +29,6 @@ namespace ionpolis.View
             if (field != "")
             {
                 string connectionString = "server = localhost; uid = sa; pwd = 1111; database = PrivateData;";
-                //string connectionString = "server = 10.200.5.73,1477; uid = savewind; pwd = savewind11!; database = CENTER_RAW;";
                 DataSet ds = new DataSet();
                 using (SqlConnection conn = new SqlConnection(connectionString))
                 {
@@ -78,7 +77,6 @@ namespace ionpolis.View
         protected void btnExcel_Click(object sender, EventArgs e)
         {
             string connectionString = "server = localhost; uid = sa; pwd = 1111; database = PrivateData;";
-            //string connectionString = "server = 10.200.5.73,1477; uid = savewind; pwd = savewind11!; database = CENTER_RAW;";
             DataSet ds = new DataSet();
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
